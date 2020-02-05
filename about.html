@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="/bootstrap/bootstrap_grid.css">
+    <script src="js/show-button.js"></script>
+    <script src="https://kit.fontawesome.com/b45d09ea78.js" crossorigin="anonymous"></script>
+    <title>FOOD BLOG HTML/CSS</title>
+</head>
+
+<body>
+
+    <header>
+        <sec class="header__top">
+            <div class="header-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="header__top--icons-wrap col-12 col-md-8">
+                            <a href="facebook.com"><i class="fab fa-pinterest"></i></a>
+                            <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                            <a href="facebook.com"><i class="fab fa-twitter"></i></a>
+                            <a href="facebook.com"><i class="fab fa-dribbble"></i></a>
+                            <a href="facebook.com"><i class="fab fa-behance"></i></a>
+                            <a href="facebook.com"><i class="fab fa-linkedin"></i></a>
+
+                        </div>
+                        <div class="header__top--right col-12 col-md-4">
+                            <a href="/">Register </a>
+                            <span>/</span>
+                            <a href="/">Login</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </sec>
+        <sec class="header__bottom">
+            <div class="container">
+                <div class="top-logo">
+                    <a href="/index.html"><img src="/images/logo.svg" alt="logo"></a>
+
+                </div>
+                <div class="links-wrap">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipies</a></li>
+                        <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header__bottom--search">
+                    <a href="/">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+                <div class="show-button">
+                    <button onclick="showMenu()">
+                        <i class="fas fa-bars"></i>
+                        <div id="showMenuList" class="noneShow">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="recipes.html">Recipies</a></li>
+                                <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                                <li class="active"><a href="about.html">About</a></li class="active">
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+
+        </sec>
+
+    </header>
+    <main>
+        <sec>
+            <div class="hero">
+                <h1>About us</h1>
+            </div>
+
+
+        </sec>
+        <sec>
+            <div class="container">
+                <div class="row">
+                    <div class="content col-12 col-lg-6">
+                        <h2>About our great team</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sequi et error perspiciatis nam
+                            voluptatem
+                            illo vitae, possimus quam. Fuga at omnis dignissimos velit recusandae, accusantium
+                            doloremque
+                            autem illo
+                            voluptatum!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta dignissimos excepturi animi
+                            quae cupiditate voluptatem, cum aperiam neque numquam fuga eligendi, tempore sint voluptate
+                            laborum? Veritatis dolores nulla explicabo cupiditate.</p>
+                        <a href="/">Read more</a>
+                    </div>
+                    <div class="image col-12 col-lg-6">
+                        <img src="/images/about.jpg" alt="about">
+                    </div>
+                </div>
+            </div>
+        </sec>
+        <section class="facts">
+            <div class="container">
+                <ul class="facts__list">
+                    <li class="col-6 col-md-3"><img src="/images/icon/1.png" alt="Amazing receipies">
+                        <p class="facts__list__number">1287</p>
+                        <p class="facts__list__name">Amazing receipies</p>
+                    </li>
+
+                    <li class="col-6 col-md-3">
+                        <img src="/images/icon/2.png" alt="Wine pairings">
+                        <p class="facts__list__number">25</p>
+                        <p class="facts__list__name">Wine pairings</p>
+                    </li>
+                    <li class="col-6 col-md-3">
+                        <img src="/images/icon/3.png" alt="Meat receipies">
+                        <p class="facts__list__number">471</p>
+                        <p class="facts__list__name">Meat receipies</p>
+                    </li>
+                    <li class="col-6 col-md-3">
+                        <img src="/images/icon/4.png" alt="Desert receipies">
+                        <p class="facts__list__number">326</p>
+                        <p class="facts__list__name">Desert receipies</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="footer-container">
+                <div class="foot__logo">
+                    <a href="/index.html"><img src="/images/logo.svg" alt="logo"></a>
+
+                </div>
+                <div class="foot__links-wrap">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipies</a></li>
+                        <li><a href="recipe-detail.html">Recipe Detail</a></li>
+                        <li class="active"><a href="about.html">About</a></li class="active">
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+            <div class="footer-container">
+
+                <div class="foot__icons">
+                    <a href="facebook.com"><i class="fab fa-pinterest"></i></a>
+                    <a href="facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="facebook.com"><i class="fab fa-twitter"></i></a>
+                    <a href="facebook.com"><i class="fab fa-dribbble"></i></a>
+                    <a href="facebook.com"><i class="fab fa-behance"></i></a>
+                    <a href="facebook.com"><i class="fab fa-linkedin"></i></a>
+
+                </div>
+                <div class="foot__license">
+                    <span>Copyright © 2020 All rights reserved | This template is made with <i class="far fa-heart"></i>
+                        by</span>
+                    <a href="/">Colorlib</a>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+[class*="col-"] {
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 16px;
+}
+
+// EXTRA SMALL
+// .col-1 { width: calc(100% / 12 * 1) }
+// .col-2 { width: calc(100% / 12 * 2) }
+// .col-3 { width: calc(100% / 12 * 3) }
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: calc(100% / 12 * #{$i});
+  }
+}
+
+// SMALL
+@media only screen and (min-width: 576px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+// MEDIUM: TABLET
+@media only screen and (min-width: 768px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+// LARGE: LAPTOP
+@media only screen and (min-width: 992px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}
+
+// EXTRA LARGE: DESKTOP
+@media only screen and (min-width: 1200px) {
+  @for $i from 1 through 12 {
+    .col-xl-#{$i} {
+      width: calc(100% / 12 * #{$i});
+    }
+  }
+}

@@ -1,0 +1,349 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  height: 600px;
+  background-image: url(/images/slider-bg-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero > div > h1.title-1 {
+  padding: 1.4rem;
+  background-color: deeppink;
+  border-radius: 8px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.hero > div > p.title-2 {
+  padding: 1rem;
+  background-color: coral;
+  border-radius: 8px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.hero > div > p.title-3 {
+  padding: 1rem;
+  background-color: yellowgreen;
+  border-radius: 8px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+.title > h2 {
+  position: relative;
+  padding: 2rem 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.title > h2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background-color: deeppink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+h3 {
+  position: relative;
+  padding: 2rem 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #333;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 5px;
+  background-color: deeppink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.recipes-list > ul > li {
+  position: relative;
+  height: 100%;
+}
+
+.recipes-list > ul > li > img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1rem;
+  width: 85%;
+  overflow: hidden;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap > .recipe-info {
+  position: relative;
+  padding: 1rem 3rem 1rem 1rem;
+  max-width: 85%;
+  background-color: deeppink;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap > .recipe-info > p {
+  color: white;
+}
+
+.recipes-list > ul > li > .recipe-info__wrap > .recipe-info::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 100%;
+  width: 9rem;
+  height: 3rem;
+  -webkit-transform: rotate(290deg);
+          transform: rotate(290deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  background-color: deeppink;
+  background-origin: padding-box;
+}
+
+.recommend-bg {
+  background-color: #eee;
+  margin-top: 4rem;
+  padding: 4rem 0;
+}
+
+li.recommend-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+li.recommend-item > img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1.5rem;
+}
+
+li.recommend-item > div > p.date {
+  color: crimson;
+  font-size: 0.8rem;
+}
+
+li.recommend-item > div > p {
+  margin-bottom: 0.5rem;
+}
+
+.blog-item {
+  position: relative;
+  margin-top: 2rem;
+  background-color: white;
+  -webkit-box-shadow: 0 3rem 4rem #ccc;
+          box-shadow: 0 3rem 4rem #ccc;
+}
+
+.blog-item > img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.blog-item > div.date-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 3rem 1rem 1rem;
+  background-color: deeppink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.blog-item > div.date-tag > p {
+  color: white;
+}
+
+.blog-item > h4 {
+  margin: 0 3rem;
+  font-weight: normal;
+}
+
+.blog-item > p.author {
+  margin: 0 3rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: crimson;
+}
+
+.blog-item > p {
+  margin: 0 3rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.blog-item > a {
+  display: block;
+  padding: 3rem 3rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.blog-item > div.showmore-tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.6rem 1rem;
+  background-color: deeppink;
+  text-align: center;
+}
+
+.blog-item > div.showmore-tag > a {
+  color: white;
+  font-weight: bold;
+}
+
+.cus-rate {
+  background-color: #ffa299;
+  padding: 4rem 0;
+}
+
+.cus-rate__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto;
+  background-color: white;
+}
+
+.cus-rate__item__img {
+  position: relative;
+  width: 166px;
+  height: 160px;
+  margin: -16px;
+}
+
+.cus-rate__item__img > img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .cus-rate__item__img {
+    margin: 0 auto 0;
+  }
+}
+
+.cus-rate__item__img div.date-tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  background-color: deeppink;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.cus-rate__item__img div.date-tag > p {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.cus-rate__item__info {
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .cus-rate__item__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+  }
+}
+
+.cus-rate__item__info p {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+}
+
+.cus-rate__item__info p.date {
+  color: deeppink;
+}
+
+.cus-rate__item__info > div.cus-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cus-rate__item__info > div.cus-name > img {
+  margin-right: 1rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.cus-rate__item__info > div.cus-name > p {
+  color: dimgrey;
+}
+/*# sourceMappingURL=home.css.map */
